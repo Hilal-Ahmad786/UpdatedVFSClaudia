@@ -1,0 +1,1391 @@
+<div class="alert alert-info">
+    <small><i class="fas fa-info-circle me-1"></i><strong>Not:</strong> Ofis ziyareti öncesi randevu almanızı öneririz.</small>
+</div>
+
+<div class="mt-3">
+    <h6><i class="fas fa-directions me-2 text-primary"></i>Yol Tarifi</h6>
+    <div class="small">
+        <p><strong>Araç ile:</strong> D-100 Karayolu'ndan Şişli çıkışı alın, Cumhuriyet Caddesi'ni takip edin.</p>
+        <p><strong>Havalistepe'nden:</strong> HAVAIST otobüsü ile Şişli durağında inin (45 dk)</p>
+        <p><strong>Otopark:</strong> Cevahir AVM otoparkı (5 dk yürüme)</p>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Additional Contact Methods -->
+<section class="py-5">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center">
+<h2 class="section-title">📞 Alternatif İletişim Yolları</h2>
+<p class="lead">Size en uygun iletişim kanalını seçin</p>
+</div>
+</div>
+
+<div class="row g-4">
+<!-- Live Chat -->
+<div class="col-md-6 col-lg-4">
+<div class="card border-0 shadow-sm h-100 text-center">
+<div class="card-body p-4">
+<div class="mb-3">
+    <i class="fas fa-comments fa-3x text-primary"></i>
+</div>
+<h5>💬 Canlı Destek</h5>
+<p class="text-muted">Anında yazışarak sorularınızı sorun</p>
+<div class="mb-3">
+    <span class="badge bg-success">Online</span>
+    <span class="badge bg-info">7/24</span>
+</div>
+<button class="btn btn-primary" onclick="openLiveChat()">
+    <i class="fas fa-comment-dots me-2"></i>Canlı Destek
+</button>
+<small class="d-block mt-2 text-muted">Ortalama yanıt süresi: 30 saniye</small>
+</div>
+</div>
+</div>
+
+<!-- Video Call -->
+<div class="col-md-6 col-lg-4">
+<div class="card border-0 shadow-sm h-100 text-center">
+<div class="card-body p-4">
+<div class="mb-3">
+    <i class="fas fa-video fa-3x text-success"></i>
+</div>
+<h5>📹 Video Görüşme</h5>
+<p class="text-muted">Uzman danışmanımızla yüz yüze görüşün</p>
+<div class="mb-3">
+    <span class="badge bg-warning text-dark">Randevulu</span>
+    <span class="badge bg-primary">Ücretsiz</span>
+</div>
+<a href="/video-gorusme-randevu" class="btn btn-success">
+    <i class="fas fa-calendar-plus me-2"></i>Randevu Al
+</a>
+<small class="d-block mt-2 text-muted">Zoom, Teams veya WhatsApp Video</small>
+</div>
+</div>
+</div>
+
+<!-- Callback Service -->
+<div class="col-md-6 col-lg-4">
+<div class="card border-0 shadow-sm h-100 text-center">
+<div class="card-body p-4">
+<div class="mb-3">
+    <i class="fas fa-phone-alt fa-3x text-warning"></i>
+</div>
+<h5>📲 Geri Arama</h5>
+<p class="text-muted">Size uygun saatte sizi arayalım</p>
+<div class="mb-3">
+    <span class="badge bg-info">Programlı</span>
+    <span class="badge bg-success">Garantili</span>
+</div>
+<button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#callbackModal">
+    <i class="fas fa-phone-square-alt me-2"></i>Geri Arama
+</button>
+<small class="d-block mt-2 text-muted">İstediğiniz saatte arama garantisi</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Emergency Contact -->
+<section class="py-5 bg-light">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<div class="alert alert-warning border-0 shadow-sm">
+<div class="row align-items-center">
+<div class="col-md-2 text-center">
+    <i class="fas fa-exclamation-triangle fa-3x text-warning"></i>
+</div>
+<div class="col-md-8">
+    <h5 class="alert-heading mb-2">🚨 Acil Durum İletişimi</h5>
+    <p class="mb-2">Vize randevunuz bugün ve acil bir sorun yaşıyorsanız:</p>
+    <ul class="mb-0">
+        <li><strong>WhatsApp:</strong> +90 552 567 71 64 (7/24 aktif)</li>
+        <li><strong>Acil Hat:</strong> +90 555 123 45 67</li>
+        <li><strong>Email:</strong> acil@globalvize.com.tr</li>
+    </ul>
+</div>
+<div class="col-md-2 text-center">
+    <a href="https://wa.me/905525677164?text=ACİL%20DURUM" target="_blank" class="btn btn-warning">
+        <i class="fab fa-whatsapp me-1"></i>Acil WhatsApp
+    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Callback Modal -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content border-0 shadow">
+<div class="modal-header bg-warning text-dark">
+<h5 class="modal-title" id="callbackModalLabel">
+<i class="fas fa-phone-alt me-2"></i>Geri Arama Talep Formu
+</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<form id="callbackForm">
+<div class="mb-3">
+<label for="callbackName" class="form-label">Ad Soyad *</label>
+<input type="text" class="form-control" id="callbackName" required>
+</div>
+<div class="mb-3">
+<label for="callbackPhone" class="form-label">Telefon Numarası *</label>
+<input type="tel" class="form-control" id="callbackPhone" placeholder="5XX XXX XX XX" required>
+</div>
+<div class="row">
+<div class="col-md-6 mb-3">
+    <label for="callbackDate" class="form-label">Tarih *</label>
+    <input type="date" class="form-control" id="callbackDate" required>
+</div>
+<div class="col-md-6 mb-3">
+    <label for="callbackTime" class="form-label">Saat *</label>
+    <select class="form-select" id="callbackTime" required>
+        <option value="">Saat seçin</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+    </select>
+</div>
+</div>
+<div class="mb-3">
+<label for="callbackSubject" class="form-label">Konu</label>
+<select class="form-select" id="callbackSubject">
+    <option value="">Konu seçin</option>
+    <option value="schengen">Schengen Vizesi</option>
+    <option value="italya">İtalya Vizesi</option>
+    <option value="fransa">Fransa Vizesi</option>
+    <option value="vfs">VFS Randevu</option>
+    <option value="diger">Diğer</option>
+</select>
+</div>
+<div class="mb-3">
+<label for="callbackMessage" class="form-label">Mesaj (İsteğe bağlı)</label>
+<textarea class="form-control" id="callbackMessage" rows="3" placeholder="Konuşmak istediğiniz konuyu kısaca belirtin..."></textarea>
+</div>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+<button type="submit" form="callbackForm" class="btn btn-warning">
+<i class="fas fa-phone me-2"></i>Geri Arama Talep Et
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer id="h44">
+<div class="container">
+<div class="row g-5">
+<div class="col-lg-4">
+<h4 class="footer-title">Global Vize</h4>
+<p>15 yılı aşkın deneyimimizle vize başvuru süreçlerinizi kolaylaştırıyor, hayallerinize giden yolda size güvenilir bir rehber oluyoruz.</p>
+<div class="social-links mt-4">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+<div class="col-lg-2 col-md-4">
+<h4 class="footer-title">Hızlı Linkler</h4>
+<div class="footer-links">
+<a href="#">Ana Sayfa</a>
+<a href="#">Hakkımızda</a>
+<a href="#">Hizmetlerimiz</a>
+<a href="#">Vize Türleri</a>
+<a href="#">Ülkeler</a>
+<a href="#">Fiyatlar</a>
+</div>
+</div>
+<div class="col-lg-3 col-md-4">
+<h4 class="footer-title">Hizmetlerimiz</h4>
+<div class="footer-links">
+<a href="#">Schengen Vizesi</a>
+<a href="#">VFS Randevu</a>
+<a href="#">İtalya Vizesi</a>
+<a href="#">Fransa Vizesi</a>
+<a href="#">Hollanda Vizesi</a>
+<a href="#">Vize Danışmanlığı</a>
+</div>
+</div>
+<div class="col-lg-3 col-md-4">
+<h4 class="footer-title">İletişim</h4>
+<div class="footer-links">
+<p><i class="fas fa-map-marker-alt me-2"></i> Şişli, İstanbul</p>
+<p><i class="fas fa-phone-alt me-2"></i> +90 212 123 4567</p>
+<p><i class="fas fa-envelope me-2"></i> info@globalvize.com.tr</p>
+<p><i class="fas fa-clock me-2"></i> Pzt-Cmt: 09:00 - 18:00</p>
+</div>
+</div>
+</div>
+<div class="copyright text-center">
+<div class="container">
+<p class="mb-0">&copy; 2025 Global Vize. Tüm Hakları Saklıdır.</p>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Form validation and functionality
+document.addEventListener('DOMContentLoaded', function() {
+// Set minimum date for callback
+const today = new Date().toISOString().split('T')[0];
+document.getElementById('callbackDate').min = today;
+
+// Phone formatting
+document.getElementById('contactPhone').addEventListener('input', function() {
+let value = this.value.replace(/\D/g, '');
+if (value.length >= 10) {
+value = value.substring(0, 10);
+}
+this.value = value;
+});
+
+document.getElementById('callbackPhone').addEventListener('input', function() {
+let value = this.value.replace(/\D/g, '');
+if (value.length >= 10) {
+value = value.substring(0, 10);
+}
+this.value = value;
+});
+
+// Main contact form submission
+document.getElementById('mainContactForm').addEventListener('submit', function(e) {
+e.preventDefault();
+
+// Validate form
+let isValid = true;
+this.querySelectorAll('[required]').forEach(field => {
+if (!field.value.trim()) {
+field.classList.add('is-invalid');
+isValid = false;
+} else {
+field.classList.remove('is-invalid');
+field.classList.add('is-valid');
+}
+});
+
+// Email validation
+const email = document.getElementById('contactEmail');
+if (email.value && !email.value.includes('@')) {
+email.classList.add('is-invalid');
+isValid = false;
+}
+
+if (!isValid) return;
+
+// Show loading
+const btn = document.getElementById('contactSubmitBtn');
+const btnText = btn.querySelector('.btn-text');
+const btnLoading = btn.querySelector('.btn-loading');
+
+btnText.classList.add('d-none');
+btnLoading.classList.remove('d-none');
+btn.disabled = true;
+
+// Simulate submission
+setTimeout(() => {
+btnText.classList.remove('d-none');
+btnLoading.classList.add('d-none');
+btn.disabled = false;
+
+alert('Mesajınız başarıyla gönderildi! Size 2 saat içinde dönüş yapacağız.');
+this.reset();
+this.querySelectorAll('.is-valid').forEach(el => el.classList.remove('is-valid'));
+}, 2000);
+});
+
+// Callback form submission
+document.getElementById('callbackForm').addEventListener('submit', function(e) {
+e.preventDefault();
+
+// Validate required fields
+let isValid = true;
+this.querySelectorAll('[required]').forEach(field => {
+if (!field.value.trim()) {
+field.classList.add('is-invalid');
+isValid = false;
+} else {
+field.classList.remove('is-invalid');
+field.classList.add('is-valid');
+}
+});
+
+if (!isValid) return;
+
+// Show success message and close modal
+alert('Geri arama talebiniz alındı! Size belirttiğiniz tarih ve saatte arayacağız.');
+bootstrap.Modal.getInstance(document.getElementById('callbackModal')).hide();
+this.reset();
+this.querySelectorAll('.is-valid').forEach(el => el.classList.remove('is-valid'));
+});
+});
+
+// Live chat function
+function openLiveChat() {
+// This would integrate with your live chat system
+alert('Canlı destek yakında aktif olacak! Şimdilik WhatsApp üzerinden destek alabilirsiniz.');
+window.open('https://wa.me/905525677164', '_blank');
+}
+
+// Navbar scroll effect
+window.addEventListener('scroll', function() {
+const navbar = document.querySelector('.navbar');
+if (window.scrollY > 50) {
+navbar.classList.add('navbar-scroll');
+} else {
+navbar.classList.remove('navbar-scroll');
+}
+});
+
+// Analytics tracking
+document.querySelectorAll('a[href^="tel:"], a[href^="mailto:"], a[href^="https://wa.me"]').forEach(link => {
+link.addEventListener('click', function() {
+if (typeof gtag !== 'undefined') {
+const linkType = this.href.includes('wa.me') ? 'whatsapp' : 
+       this.href.startsWith('tel:') ? 'phone' :
+       this.href.startsWith('mailto:') ? 'email' : 'other';
+
+gtag('event', 'contact_click', {
+'event_category': 'engagement',
+'event_label': linkType
+});
+}
+});
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+target.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+</script>
+
+<style>
+.contact-info {
+background: linear-gradient(135deg, var(--primary), var(--secondary));
+border-radius: var(--border-radius-lg);
+}
+
+.contact-form {
+background: white;
+border-radius: var(--border-radius-lg);
+box-shadow: var(--shadow-md);
+}
+
+.contact-item {
+padding: 1rem 0;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-item:last-child {
+border-bottom: none;
+}
+
+.contact-item h5 {
+color: white;
+margin-bottom: 0.5rem;
+}
+
+.contact-item a {
+color: rgba(255, 255, 255, 0.9);
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+color: white;
+}
+
+.map-container {
+border-radius: 15px;
+overflow: hidden;
+box-shadow: var(--shadow-lg);
+}
+
+.card:hover {
+transform: translateY(-5px);
+transition: transform 0.3s ease;
+}
+
+.modal-content {
+border-radius: var(--border-radius-lg);
+}
+
+.modal-header {
+border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+}
+
+.alert {
+border-radius: var(--border-radius-lg);
+}
+
+@media (max-width: 768px) {
+.contact-info,
+.contact-form {
+margin-bottom: 2rem;
+padding: 1.5rem;
+}
+
+.map-container {
+height: 300px !important;
+}
+
+.d-flex.gap-3 {
+flex-direction: column;
+}
+
+.btn {
+margin-bottom: 0.5rem;
+}
+}
+
+/* Animation for contact cards */
+.card {
+transition: all 0.3s ease;
+}
+
+.card:hover {
+box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Team member cards */
+.card img {
+transition: transform 0.3s ease;
+}
+
+.card:hover img {
+transform: scale(1.05);
+}
+
+/* Form enhancements */
+.form-control:focus,
+.form-select:focus {
+border-color: var(--primary);
+box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+}
+
+.is-valid {
+border-color: var(--success) !important;
+}
+
+.is-invalid {
+border-color: var(--danger) !important;
+}
+
+/* Loading animation */
+.spinner-border-sm {
+width: 1rem;
+height: 1rem;
+}
+
+/* WhatsApp button animation */
+.btn-success:hover {
+animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.05); }
+100% { transform: scale(1); }
+}
+
+/* Emergency alert styling */
+.alert-warning {
+border-left: 4px solid var(--warning);
+}
+
+/* Badge styling */
+.badge {
+font-size: 0.75rem;
+padding: 0.4rem 0.8rem;
+border-radius: 6px;
+}
+
+/* Contact method cards hover effect */
+.card-body {
+transition: all 0.3s ease;
+}
+
+.card:hover .card-body {
+background-color: rgba(var(--primary-rgb), 0.05);
+}
+
+/* Footer links hover effect */
+.footer-links a:hover {
+transform: translateX(5px);
+color: white;
+}
+
+/* Social links animation */
+.social-links a {
+transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+transform: translateY(-3px) scale(1.1);
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Accessibility improvements */
+.btn:focus {
+outline: 2px solid var(--primary);
+outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+.modal,
+.btn,
+.alert,
+nav,
+footer {
+display: none !important;
+}
+
+.contact-info,
+.contact-form {
+background: white !important;
+color: black !important;
+box-shadow: none !important;
+border: 1px solid #ccc !important;
+}
+}
+</style>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Enhanced SEO Meta Tags -->
+<title>İletişim | Global Vize - Uzman Vize Danışmanlığı İletişim Bilgileri</title>
+<meta name="description" content="Global Vize ile iletişime geçin. Schengen vizesi, VFS randevu ve tüm vize işlemleriniz için uzman ekibimizden 7/24 destek alın. Hemen arayın!">
+<meta name="keywords" content="vize danışmanlığı iletişim, schengen vize destek, vfs randevu yardım, vize başvuru iletişim, istanbul vize danışmanı">
+<meta name="author" content="Global Vize Ajansı">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.globalvize.com.tr/contact">
+
+<!-- Open Graph -->
+<meta property="og:title" content="İletişim | Global Vize Danışmanlığı">
+<meta property="og:description" content="Vize işlemleriniz için uzman desteği. Hemen bizimle iletişime geçin.">
+<meta property="og:image" content="https://www.globalvize.com.tr/images/contact-og.jpg">
+<meta property="og:url" content="https://www.globalvize.com.tr/contact">
+<meta property="og:type" content="website">
+
+<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ContactPage",
+"name": "Global Vize İletişim",
+"description": "Vize danışmanlığı hizmetleri için iletişim bilgileri",
+"url": "https://www.globalvize.com.tr/contact",
+"mainEntity": {
+"@type": "Organization",
+"name": "Global Vize",
+"contactPoint": {
+"@type": "ContactPoint",
+"telephone": "+90-212-123-4567",
+"contactType": "customer service",
+"availableLanguage": "Turkish"
+}
+}
+}
+</script>
+</head>
+<body>
+<!-- Header -->
+<header>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<div class="container">
+<a class="navbar-brand" href="/">
+<i class="fas fa-passport me-2"></i>TVS<span>Global</span>
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="/">Ana Sayfa</a></li>
+<li class="nav-item"><a class="nav-link" href="/services">Hizmetlerimiz</a></li>
+<li class="nav-item"><a class="nav-link" href="/countries">Ülkeler</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="/sss">SSS</a></li>
+<li class="nav-item"><a class="nav-link active" href="/contact" aria-current="page">İletişim</a></li>
+</ul>
+<a href="/application" class="btn btn-primary ms-lg-3">Online Başvuru</a>
+</div>
+</div>
+</nav>
+</header>
+
+<!-- Top Ad Space -->
+<div class="ad-space top-ad d-none d-md-block">
+<div class="container text-center">
+<div class="ad-placeholder" style="width: 728px; height: 90px; margin: 10px auto; background: #f8f9fa; border: 1px dashed #dee2e6; display: flex; align-items: center; justify-content: center; color: #6c757d;">
+728x90 İletişim Sayfası Üst Reklam
+</div>
+</div>
+</div>
+
+<!-- Page Header -->
+<section class="bg-primary rootbackground text-white py-5 my-5">
+<div class="container py-4">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb text-white bg-transparent p-0 mb-3">
+<li class="breadcrumb-item"><a href="/" class="text-white">Ana Sayfa</a></li>
+<li class="breadcrumb-item active text-white" aria-current="page">İletişim</li>
+</ol>
+</nav>
+<div class="row align-items-center">
+<div class="col-lg-8">
+<h1 class="display-4 fw-bold mb-3">Bizimle İletişime Geçin</h1>
+<p class="lead mb-4">Vize işlemleriniz için uzman desteği alın. 15+ yıllık deneyimimizle yanınızdayız.</p>
+<div class="row text-center text-white">
+<div class="col-md-4 mb-3">
+<div class="alert alert-info">
+    <small><i class="fas fa-info-circle me-1"></i><strong>Not:</strong> Ofis ziyareti öncesi randevu almanızı öneririz.</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-5">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center">
+<h2 class="section-title">Sıkça Sorulan İletişim Soruları</h2>
+<p class="lead">İletişim konusunda merak edilenler</p>
+</div>
+</div>
+
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<div class="accordion" id="contactFaqAccordion">
+<div class="accordion-item">
+<h3 class="accordion-header">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq1" aria-expanded="true" aria-controls="contactFaq1">
+        Size ulaştığımızda telefonumu açamarsam ne olur?
+    </button>
+</h3>
+<div id="contactFaq1" class="accordion-collapse collapse show" data-bs-parent="#contactFaqAccordion">
+    <div class="accordion-body">
+        <p>Endişelenmeyin! Size 2-3 kez farklı saatlerde ulaşmaya çalışırız. Eğer telefon açamazsanız:</p>
+        <ul>
+            <li>WhatsApp'tan mesaj gönderebilirsiniz</li>
+            <li>Size SMS ile geri arama saati bildiririz</li>
+            <li>E-posta ile detaylı bilgi gönderebiliriz</li>
+            <li>Uygun olduğunuz saati bize bildirin</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<div class="accordion-item">
+<h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq2" aria-expanded="false" aria-controls="contactFaq2">
+        Hafta sonu destek alabilir miyim?
+    </button>
+</h3>
+<div id="contactFaq2" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+    <div class="accordion-body">
+        <p><strong>Cumartesi:</strong> Normal çalışma saatlerimiz 10:00-16:00 arasındadır.</p>
+        <p><strong>Pazar:</strong> Ofisimiz kapalıdır ancak acil durumlar için WhatsApp hattımız 7/24 aktiftir.</p>
+        <p><strong>Acil durum tanımı:</strong></p>
+        <ul>
+            <li>Pazartesi randevunuz var ve belge eksikliği</li>
+            <li>Vize sonucunuz çıktı ve pasaport teslimi gerekli</li>
+            <li>Seyahat tarihine çok az kaldı</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<div class="accordion-item">
+<h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq3" aria-expanded="false" aria-controls="contactFaq3">
+        WhatsApp'tan dosya gönderebilir miyim?
+    </button>
+</h3>
+<div id="contactFaq3" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+    <div class="accordion-body">
+        <p>Evet! WhatsApp üzerinden belgelerinizi güvenle gönderebilirsiniz:</p>
+        <ul>
+            <li><strong>Desteklenen formatlar:</strong> PDF, JPG, PNG, DOC, DOCX</li>
+            <li><strong>Maksimum dosya boyutu:</strong> 16 MB</li>
+            <li><strong>Güvenlik:</strong> Gönderdiğiniz belgeler şifreli olarak saklanır</li>
+            <li><strong>Yanıt süresi:</strong> Belgelerinizi inceleyip 1-2 saat içinde dönüş yaparız</li>
+        </ul>
+        <div class="alert alert-warning mt-2">
+            <small><strong>Önemli:</strong> Pasaport ve kişisel belgelerinizi sadece resmi WhatsApp hattımıza gönderin.</small>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="accordion-item">
+<h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq4" aria-expanded="false" aria-controls="contactFaq4">
+        Ofise gelmeden vize işlemi yapabilir miyim?
+    </button>
+</h3>
+<div id="contactFaq4" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+    <div class="accordion-body">
+        <p>Evet! Vize sürecinin %90'ını uzaktan halledilebilir:</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h6>Online Yapılabilir:</h6>
+                <ul>
+                    <li>Ön değerlendirme</li>
+                    <li>Belge kontrolü</li>
+                    <li>Randevu alma</li>
+                    <li>Form doldurma</li>
+                    <li>Ödeme işlemleri</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h6>Fiziki Teslim Gerekli:</h6>
+                <ul>
+                    <li>Pasaport teslimi</li>
+                    <li>Biyometrik veriler (bazı ülkeler)</li>
+                    <li>Konsolosluk randevusu</li>
+                    <li>Orijinal belge kontrolü</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Team Section -->
+<section class="py-5 bg-light">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center">
+<h2 class="section-title">Uzman Ekibimiz</h2>
+<p class="lead">Size yardımcı olacak deneyimli danışmanlarımız</p>
+</div>
+</div>
+
+<div class="row g-4">
+<div class="col-md-6 col-lg-3">
+<div class="card border-0 shadow-sm text-center">
+<div class="card-body p-4">
+<div class="mb-3">
+    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Mehmet Yılmaz" class="rounded-circle" width="100" height="100">
+</div>
+<h5>Mehmet Yılmaz</h5>
+<p class="text-muted">Schengen Vize Uzmanı</p>
+<small>15+ yıl deneyim</small>
+<div class="mt-3">
+    <a href="https://wa.me/905551234501" class="btn btn-sm btn-success">
+        <i class="fab fa-whatsapp me-1"></i>WhatsApp
+    </a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card border-0 shadow-sm text-center">
+<div class="card-body p-4">
+<div class="mb-3">
+    <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Ayşe Demir" class="rounded-circle" width="100" height="100">
+</div>
+<h5>Ayşe Demir</h5>
+<p class="text-muted">VFS & Randevu Uzmanı</p>
+<small>12+ yıl deneyim</small>
+<div class="mt-3">
+    <a href="https://wa.me/905551234502" class="btn btn-sm btn-success">
+        <i class="fab fa-whatsapp me-1"></i>WhatsApp
+    </a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card border-0 shadow-sm text-center">
+<div class="card-body p-4">
+<div class="mb-3">
+    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ali Kaya" class="rounded-circle" width="100" height="100">
+</div>
+<h5>Ali Kaya</h5>
+<p class="text-muted">İngiltere Vize Uzmanı</p>
+<small>10+ yıl deneyim</small>
+<div class="mt-3">
+    <a href="https://wa.me/905551234503" class="btn btn-sm btn-success">
+        <i class="fab fa-whatsapp me-1"></i>WhatsApp
+    </a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card border-0 shadow-sm text-center">
+<div class="card-body p-4">
+<div class="mb-3">
+    <img src="https://randomuser.me/api/portraits/women/38.jpg" alt="Fatma Özkan" class="rounded-circle" width="100" height="100">
+</div>
+<h5>Fatma Özkan</h5>
+<p class="text-muted">Öğrenci Vize Uzmanı</p>
+<small>8+ yıl deneyim</small>
+<div class="mt-3">
+    <a href="https://wa.me/905551234504" class="btn btn-sm btn-success">
+        <i class="fab fa-whatsapp me-1"></i>WhatsApp
+    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer id="h44">
+<div class="container">
+<div class="row g-5">
+<div class="col-lg-4">
+<h4 class="footer-title">Global Vize</h4>
+<p>15 yılı aşkın deneyimimizle vize başvuru süreçlerinizi kolaylaştırıyor, hayallerinize giden yolda size güvenilir bir rehber oluyoruz.</p>
+<div class="social-links mt-4">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+<div class="col-lg-2 col-md-4">
+<h4 class="footer-title">Hızlı Linkler</h4>
+<div class="footer-links">
+<a href="#">Ana Sayfa</a>
+<a href="#">Hakkımızda</a>
+<a href="#">Hizmetlerimiz</a>
+<a href="#">Vize Türleri</a>
+<a href="#">Ülkeler</a>
+<a href="#">Fiyatlar</a>
+</div>
+</div>
+<div class="col-lg-3 col-md-4">
+<h4 class="footer-title">Hizmetlerimiz</h4>
+<div class="footer-links">
+<a href="#">Schengen Vizesi</a>
+<a href="#">VFS Randevu</a>
+<a href="#">İtalya Vizesi</a>
+<a href="#">Fransa Vizesi</a>
+<a href="#">Hollanda Vizesi</a>
+<a href="#">Vize Danışmanlığı</a>
+</div>
+</div>
+<div class="col-lg-3 col-md-4">
+<h4 class="footer-title">İletişim</h4>
+<div class="footer-links">
+<p><i class="fas fa-map-marker-alt me-2"></i> Şişli, İstanbul</p>
+<p><i class="fas fa-phone-alt me-2"></i> +90 212 123 4567</p>
+<p><i class="fas fa-envelope me-2"></i> info@globalvize.com.tr</p>
+<p><i class="fas fa-clock me-2"></i> Pzt-Cmt: 09:00 - 18:00</p>
+</div>
+</div>
+</div>
+<div class="copyright text-center">
+<div class="container">
+<p class="mb-0">&copy; 2025 Global Vize. Tüm Hakları Saklıdır.</p>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Form validation and functionality
+document.addEventListener('DOMContentLoaded', function() {
+// Phone formatting
+document.getElementById('contactPhone').addEventListener('input', function() {
+let value = this.value.replace(/\D/g, '');
+if (value.length >= 10) {
+value = value.substring(0, 10);
+}
+this.value = value;
+});
+
+// Form submission
+document.getElementById('mainContactForm').addEventListener('submit', function(e) {
+e.preventDefault();
+
+// Validate form
+let isValid = true;
+this.querySelectorAll('[required]').forEach(field => {
+if (!field.value.trim()) {
+field.classList.add('is-invalid');
+isValid = false;
+} else {
+field.classList.remove('is-invalid');
+field.classList.add('is-valid');
+}
+});
+
+// Email validation
+const email = document.getElementById('contactEmail');
+if (email.value && !email.value.includes('@')) {
+email.classList.add('is-invalid');
+isValid = false;
+}
+
+if (!isValid) return;
+
+// Show loading
+const btn = document.getElementById('contactSubmitBtn');
+const btnText = btn.querySelector('.btn-text');
+const btnLoading = btn.querySelector('.btn-loading');
+
+btnText.classList.add('d-none');
+btnLoading.classList.remove('d-none');
+btn.disabled = true;
+
+// Simulate submission
+setTimeout(() => {
+btnText.classList.remove('d-none');
+btnLoading.classList.add('d-none');
+btn.disabled = false;
+
+alert('Mesajınız başarıyla gönderildi! Size 2 saat içinde dönüş yapacağız.');
+this.reset();
+this.querySelectorAll('.is-valid').forEach(el => el.classList.remove('is-valid'));
+}, 2000);
+});
+});
+
+// Navbar scroll effect
+window.addEventListener('scroll', function() {
+const navbar = document.querySelector('.navbar');
+if (window.scrollY > 50) {
+navbar.classList.add('navbar-scroll');
+} else {
+navbar.classList.remove('navbar-scroll');
+}
+});
+</script>
+</body>
+</html>="d-flex align-items-center justify-content-center">
+    <i class="fas fa-phone fa-2x me-3"></i>
+    <div>
+        <h5>7/24 Destek</h5>
+        <small>Anında Ulaşım</small>
+    </div>
+</div>
+</div>
+<div class="col-md-4 mb-3">
+<div class="d-flex align-items-center justify-content-center">
+    <i class="fas fa-clock fa-2x me-3"></i>
+    <div>
+        <h5>2 Dk İçinde</h5>
+        <small>Geri Dönüş</small>
+    </div>
+</div>
+</div>
+<div class="col-md-4 mb-3">
+<div class="d-flex align-items-center justify-content-center">
+    <i class="fas fa-users fa-2x me-3"></i>
+    <div>
+        <h5>Uzman Ekip</h5>
+        <small>15+ Yıl Deneyim</small>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="text-center">
+<i class="fas fa-headset fa-5x opacity-75"></i>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Quick Contact Section -->
+<section class="py-5 bg-light">
+<div class="container">
+<div class="row text-center mb-5">
+<div class="col-12">
+<h2 class="section-title">Hızlı İletişim</h2>
+<p class="lead">Size en uygun iletişim yöntemini seçin</p>
+</div>
+</div>
+
+<div class="row g-4">
+<div class="col-md-6 col-lg-3">
+<div class="card h-100 text-center border-0 shadow-sm">
+<div class="card-body p-4">
+<div class="mb-3">
+    <i class="fas fa-phone-alt fa-3x text-primary"></i>
+</div>
+<h4>Telefon</h4>
+<p class="mb-3">Anında destek için bizi arayın</p>
+<a href="tel:+902121234567" class="btn btn-primary">
+    <i class="fas fa-phone me-2"></i>Ara
+</a>
+<div class="mt-3">
+    <small class="text-muted">+90 212 123 4567</small>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card h-100 text-center border-0 shadow-sm">
+<div class="card-body p-4">
+<div class="mb-3">
+    <i class="fab fa-whatsapp fa-3x text-success"></i>
+</div>
+<h4>WhatsApp</h4>
+<p class="mb-3">Mesajlaşarak hızlı destek alın</p>
+<a href="https://wa.me/905525677164" target="_blank" class="btn btn-success">
+    <i class="fab fa-whatsapp me-2"></i>Mesaj Gönder
+</a>
+<div class="mt-3">
+    <small class="text-muted">+90 552 567 71 64</small>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card h-100 text-center border-0 shadow-sm">
+<div class="card-body p-4">
+<div class="mb-3">
+    <i class="fas fa-envelope fa-3x text-info"></i>
+</div>
+<h4>E-posta</h4>
+<p class="mb-3">Detaylı sorularınız için e-posta</p>
+<a href="mailto:info@globalvize.com.tr" class="btn btn-info">
+    <i class="fas fa-envelope me-2"></i>E-posta Gönder
+</a>
+<div class="mt-3">
+    <small class="text-muted">info@globalvize.com.tr</small>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card h-100 text-center border-0 shadow-sm">
+<div class="card-body p-4">
+<div class="mb-3">
+    <i class="fas fa-map-marker-alt fa-3x text-warning"></i>
+</div>
+<h4>Ofis Ziyareti</h4>
+<p class="mb-3">Yüz yüze görüşme için ofisimize gelin</p>
+<a href="#map-section" class="btn btn-warning">
+    <i class="fas fa-map-marker-alt me-2"></i>Harita
+</a>
+<div class="mt-3">
+    <small class="text-muted">Şişli, İstanbul</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- In-Content Ad -->
+<div class="ad-space in-content-ad">
+<div class="container">
+<div class="ad-placeholder" style="width: 100%; max-width: 728px; height: 90px; margin: 20px auto; background: #f8f9fa; border: 1px dashed #dee2e6; display: flex; align-items: center; justify-content: center; color: #6c757d;">
+728x90 İletişim İçerik Arası Reklam
+</div>
+</div>
+</div>
+
+<!-- Main Contact Section -->
+<section class="py-5">
+<div class="container">
+<div class="row g-5">
+<!-- Contact Information -->
+<div class="col-lg-6">
+<div class="contact-info h-100">
+<h3 class="mb-4">📍 İletişim Bilgilerimiz</h3>
+
+<!-- Office Address -->
+<div class="contact-item mb-4">
+<h5><i class="fas fa-building me-2"></i>Ofis Adresimiz</h5>
+<p>Şişli, Cumhuriyet Cd. No:123 Kat:4<br>
+34380 Şişli, İstanbul, Türkiye</p>
+<small class="text-light">Metro: Şişli-Mecidiyeköy (M2) - 5 dk yürüme</small>
+</div>
+
+<!-- Phone Numbers -->
+<div class="contact-item mb-4">
+<h5><i class="fas fa-phone-alt me-2"></i>Telefon Hatlarımız</h5>
+<p><strong>Ana Hat:</strong> <a href="tel:+902121234567" class="text-white">+90 212 123 4567</a></p>
+<p><strong>WhatsApp:</strong> <a href="https://wa.me/905525677164" class="text-white">+90 552 567 71 64</a></p>
+<p><strong>Acil Durum:</strong> <a href="tel:+905551234567" class="text-white">+90 555 123 45 67</a></p>
+</div>
+
+<!-- Email Addresses -->
+<div class="contact-item mb-4">
+<h5><i class="fas fa-envelope me-2"></i>E-posta Adreslerimiz</h5>
+<p><strong>Genel Bilgi:</strong> <a href="mailto:info@globalvize.com.tr" class="text-white">info@globalvize.com.tr</a></p>
+<p><strong>Destek:</strong> <a href="mailto:destek@globalvize.com.tr" class="text-white">destek@globalvize.com.tr</a></p>
+<p><strong>Başvuru:</strong> <a href="mailto:basvuru@globalvize.com.tr" class="text-white">basvuru@globalvize.com.tr</a></p>
+</div>
+
+<!-- Working Hours -->
+<div class="contact-item mb-4">
+<h5><i class="fas fa-clock me-2"></i>Çalışma Saatlerimiz</h5>
+<div class="row">
+    <div class="col-6">
+        <p><strong>Pazartesi-Cuma:</strong><br>09:00 - 18:00</p>
+    </div>
+    <div class="col-6">
+        <p><strong>Cumartesi:</strong><br>10:00 - 16:00</p>
+    </div>
+</div>
+<p><strong>Pazar:</strong> Kapalı (Acil durumlar için WhatsApp)</p>
+<small class="text-light"><i class="fas fa-info-circle me-1"></i>Resmi tatillerde kapalıyız</small>
+</div>
+
+<!-- Departments -->
+<div class="contact-item mb-4">
+<h5><i class="fas fa-users me-2"></i>Departmanlarımız</h5>
+<div class="row">
+    <div class="col-md-6">
+        <p><strong>Schengen Vize:</strong><br>İç hat: 101</p>
+        <p><strong>ABD Vizesi:</strong><br>İç hat: 102</p>
+    </div>
+    <div class="col-md-6">
+        <p><strong>İngiltere Vizesi:</strong><br>İç hat: 103</p>
+        <p><strong>Öğrenci Vizesi:</strong><br>İç hat: 104</p>
+    </div>
+</div>
+</div>
+
+<!-- Emergency Contact -->
+<div class="alert alert-warning">
+<h6 class="alert-heading"><i class="fas fa-exclamation-triangle me-2"></i>Acil Durum İletişimi</h6>
+<p class="mb-0">Vize randevunuz bugün ve acil bir sorun yaşıyorsanız, <strong>WhatsApp hattımızdan</strong> 7/24 destek alabilirsiniz.</p>
+</div>
+</div>
+</div>
+
+<!-- Contact Form -->
+<div class="col-lg-6">
+<div class="contact-form h-100">
+<h3 class="mb-4">💬 Hızlı İletişim Formu</h3>
+<p class="text-muted mb-4">Formu doldurun, size 2 saat içinde dönüş yapalım</p>
+
+<form id="mainContactForm" novalidate>
+<div class="row">
+    <div class="col-md-6 mb-3">
+        <label for="contactName" class="form-label">Ad Soyad *</label>
+        <input type="text" class="form-control form-control-lg" id="contactName" name="name" placeholder="Adınız Soyadınız" required>
+        <div class="invalid-feedback">Lütfen adınızı soyadınızı girin</div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="contactPhone" class="form-label">Telefon *</label>
+        <input type="tel" class="form-control form-control-lg" id="contactPhone" name="phone" placeholder="5XX XXX XX XX" required>
+        <div class="invalid-feedback">Telefon numaranızı girin</div>
+    </div>
+    <div class="col-12 mb-3">
+        <label for="contactEmail" class="form-label">E-posta *</label>
+        <input type="email" class="form-control form-control-lg" id="contactEmail" name="email" placeholder="E-posta Adresiniz" required>
+        <div class="invalid-feedback">Geçerli bir e-posta adresi girin</div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="contactCountry" class="form-label">Hangi Ülke İçin? *</label>
+        <select class="form-select form-select-lg" id="contactCountry" name="country" required>
+            <option value="">Ülke Seçin</option>
+            <optgroup label="🇪🇺 Schengen Ülkeleri">
+                <option value="almanya">🇩🇪 Almanya</option>
+                <option value="fransa">🇫🇷 Fransa</option>
+                <option value="italya">🇮🇹 İtalya</option>
+                <option value="ispanya">🇪🇸 İspanya</option>
+                <option value="hollanda">🇳🇱 Hollanda</option>
+                <option value="avusturya">🇦🇹 Avusturya</option>
+                <option value="belcika">🇧🇪 Belçika</option>
+                <option value="danimarka">🇩🇰 Danimarka</option>
+                <option value="finlandiya">🇫🇮 Finlandiya</option>
+                <option value="isved">🇸🇪 İsveç</option>
+                <option value="norvec">🇳🇴 Norveç</option>
+                <option value="portekiz">🇵🇹 Portekiz</option>
+                <option value="yunanistan">🇬🇷 Yunanistan</option>
+                <option value="isvicre">🇨🇭 İsviçre</option>
+            </optgroup>
+            <optgroup label="🌍 Diğer Popüler Ülkeler">
+                <option value="ingiltere">🇬🇧 İngiltere</option>
+                <option value="diger">🌎 Diğer Ülke</option>
+            </optgroup>
+        </select>
+        <div class="invalid-feedback">Lütfen ülke seçin</div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="contactSubject" class="form-label">Konu</label>
+        <select class="form-select form-select-lg" id="contactSubject" name="subject">
+            <option value="">Konu Seçiniz</option>
+            <option value="vize-danismanligi">🎯 Vize Danışmanlığı</option>
+            <option value="vfs-randevu">📅 VFS Randevu Alma</option>
+            <option value="schengen-vize">🇪🇺 Schengen Vizesi</option>
+            <option value="vize-takip">📋 Vize Başvuru Takibi</option>
+            <option value="belge-yardim">📄 Belge Hazırlama Yardımı</option>
+            <option value="fiyat-bilgi">💰 Fiyat Bilgisi</option>
+            <option value="red-basvuru">❌ Red Edilen Başvuru</option>
+            <option value="acil-vize">⚡ Acil Vize İşlemi</option>
+            <option value="diger">📝 Diğer</option>
+        </select>
+    </div>
+    <div class="col-12 mb-3">
+        <label for="contactMessage" class="form-label">Mesajınız *</label>
+        <textarea class="form-control form-control-lg" id="contactMessage" name="message" rows="5" placeholder="Vize işleminizle ilgili detayları ve sorularınızı buraya yazın..." required></textarea>
+        <div class="invalid-feedback">Lütfen mesajınızı yazın</div>
+        <div class="form-text">Mümkün olduğunca detaylı bilgi verin ki size daha iyi yardımcı olalım</div>
+    </div>
+    <div class="col-12 mb-3">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="contactKvkk" name="kvkk" required>
+            <label class="form-check-label" for="contactKvkk">
+                <a href="/kvkk" target="_blank" class="text-primary">KVKK Aydınlatma Metni</a>'ni okudum ve kabul ediyorum. *
+            </label>
+            <div class="invalid-feedback">Lütfen KVKK metnini kabul edin</div>
+        </div>
+    </div>
+    <div class="col-12 mb-3">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="contactMarketing" name="marketing">
+            <label class="form-check-label" for="contactMarketing">
+                Vize süreçleri ve güncellemeler hakkında bilgilendirilmek istiyorum.
+            </label>
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary btn-lg w-100" id="contactSubmitBtn">
+            <span class="btn-text">
+                <i class="fas fa-paper-plane me-2"></i>Mesaj Gönder
+            </span>
+            <span class="btn-loading d-none">
+                <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                Gönderiliyor...
+            </span>
+        </button>
+        <small class="text-muted d-block text-center mt-2">
+            <i class="fas fa-clock me-1"></i>Mesajınıza en geç 2 saat içinde dönüş yapıyoruz
+        </small>
+    </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Map and Location Section -->
+<section class="py-5 bg-light" id="map-section">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center">
+<h2 class="section-title">Ofis Konumumuz</h2>
+<p class="lead">Kolay ulaşım için detaylı adres ve yol tarifi</p>
+</div>
+</div>
+
+<div class="row g-4">
+<div class="col-lg-8">
+<!-- Google Maps Placeholder -->
+<div class="map-container shadow-lg" style="height: 400px; border-radius: 15px; overflow: hidden; background: #f8f9fa; display: flex; align-items: center; justify-content: center; border: 1px solid #dee2e6;">
+<div class="text-center">
+<i class="fas fa-map-marked-alt fa-3x text-primary mb-3"></i>
+<h5>Google Maps Haritası</h5>
+<p class="text-muted">Şişli, Cumhuriyet Cd. No:123, İstanbul</p>
+<a href="https://maps.google.com/maps?q=Şişli,Cumhuriyet+Cd.+No:123,+İstanbul" target="_blank" class="btn btn-primary">
+    <i class="fas fa-external-link-alt me-2"></i>Google Maps'te Aç
+</a>
+</div>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="card border-0 shadow-lg h-100">
+<div class="card-body p-4">
+<h4 class="card-title">🚗 Ulaşım Bilgileri</h4>
+
+<div class="mb-3">
+    <h6><i class="fas fa-subway me-2 text-primary"></i>Metro</h6>
+    <p class="small mb-0">M2 Hattı - Şişli-Mecidiyeköy İstasyonu</p>
+    <p class="small text-muted">5 dakika yürüme mesafesi</p>
+</div>
+
+<div class="mb-3">
+    <h6><i class="fas fa-bus me-2 text-success"></i>Otobüs</h6>
+    <p class="small mb-0">Şişli Etfal Hastanesi Durağı</p>
+    <p class="small text-muted">Çok sayıda hat (25E, 30D, 42T...)</p>
+</div>
+
+<div class="mb-3">
+    <h6><i class="fas fa-car me-2 text-warning"></i>Araç ile</h6>
+    <p class="small mb-0">Cumhuriyet Caddesi üzerinde</p>
+    <p class="small text-muted">Yakın otopark bulunmaktadır</p>
+</div>
+
+<div class="mb-3">
+    <h6><i class="fas fa-taxi me-2 text-info"></i>Taksi/Uber</h6>
+    <p class="small mb-0">"Şişli Cumhuriyet Caddesi 123" deyin</p>
+    <p class="small text-muted">Metro çıkışından taksi var</p>
+</div>
+
+<hr>
+
+<div class
