@@ -1,0 +1,129 @@
+# Robots.txt for Global Vize - www.globalvize.com.tr
+
+User-agent: *
+Allow: /
+
+# Allow important pages
+Allow: /
+Allow: /application
+Allow: /services
+Allow: /countries
+Allow: /blog
+Allow: /sss
+Allow: /iletisim
+Allow: /hakkimizda
+
+# Allow service pages
+Allow: /turistik-vize
+Allow: /ticari-vize
+Allow: /ogrenci-vizesi
+Allow: /aile-birlesmimi
+Allow: /vize-yenileme
+
+# Allow country-specific pages
+Allow: /almanya-vizesi
+Allow: /amerika-vizesi
+Allow: /fransa-vizesi
+Allow: /ingiltere-vizesi
+Allow: /italya-vizesi
+Allow: /ispanya-vizesi
+Allow: /kanada-vizesi
+
+# Allow resource pages
+Allow: /vize-rehberi
+Allow: /fiyatlar
+Allow: /yorumlar
+
+# Block admin and private areas
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /private/
+Disallow: /temp/
+Disallow: /backup/
+
+# Block search and filter pages to avoid duplicate content
+Disallow: /search?
+Disallow: /*?search=
+Disallow: /*?filter=
+Disallow: /*?sort=
+Disallow: /*?page=
+
+# Block form processing pages
+Disallow: /form-submit
+Disallow: /process-application
+Disallow: /thank-you
+
+# Block API endpoints
+Disallow: /api/
+Disallow: /ajax/
+Disallow: /rest/
+
+# Block development and testing pages
+Disallow: /test/
+Disallow: /dev/
+Disallow: /staging/
+
+# Block file directories
+Disallow: /files/
+Disallow: /uploads/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+
+# Block tracking and analytics
+Disallow: /analytics/
+Disallow: /tracking/
+
+# Google-specific rules
+User-agent: Googlebot
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Crawl-delay: 1
+
+# Bing-specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Yandex-specific rules (for international reach)
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+# Social media bots
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Block aggressive crawlers
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: Wayback
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://www.globalvize.com.tr/sitemap.xml
+
+# Additional sitemaps
+Sitemap: https://www.globalvize.com.tr/sitemap-pages.xml
+Sitemap: https://www.globalvize.com.tr/sitemap-blog.xml
+Sitemap: https://www.globalvize.com.tr/sitemap-countries.xml
